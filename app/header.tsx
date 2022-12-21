@@ -5,15 +5,18 @@ import WagmiProvider from "../providers/wagmi";
 
 export default function Header() {
   return (
-    <header>
-        <nav>
-            <div className="flex items-center">
+    <nav class="flex items-center justify-between flex-wrap p-6">
+        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+            <div class="flex-grow">
+            </div>
+            <div>
                 <WagmiProvider>
                     <Wallet />
                 </WagmiProvider>
             </div>
-            <div className="flex items-center justify-between border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10"></div>
-        </nav>
-    </header>
+        </div>
+    </nav>
   )
 }
+
+{/*  */}
