@@ -1,5 +1,3 @@
-'use client';
-
 import { WagmiConfig, createClient, configureChains, mainnet } from 'wagmi'
 import { publicProvider } from 'wagmi/providers/public'
 import { getDefaultProvider } from 'ethers';
