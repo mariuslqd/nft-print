@@ -15,7 +15,7 @@ export const getNfts = async (address: string) => {
 
 export const getNftMetadata = async (address: string, tokenId: string) => {
   return await provider.getNFTMetadata({
-    blockchain: 'eth',
+    blockchain: 'polygon',
     contractAddress: address,
     tokenId: tokenId,
   });
