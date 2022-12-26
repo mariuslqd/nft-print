@@ -10,7 +10,7 @@ export default function Header() {
     <nav className="flex items-center justify-between flex-wrap p-6">
       <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
         <div>
-          <Link href="/" className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-3xl dark:text-black">NFT Pod</Link>
+          <Link href="/" className="mb-4 text-4xl font-extrabold tracking-tight leading-none dark:text-black">NFT Pod</Link>
         </div>
         <div className="flex-grow">
         </div>
