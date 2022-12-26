@@ -12,19 +12,20 @@ async function getNftImageUrl(address: string, tokenId: string) {
 
 export default function Print() {
   const searchParams = useSearchParams();
-
   const address = searchParams.get('address')!;
   const tokenId = searchParams.get('tokenId')!;
   const [nftUrl, setNftUrl] = useState("");
-
+  
   useEffect(() => {
     async function getData() {
       const result = await getNftImageUrl(address, tokenId);
+
       setNftUrl(result);
     }
 
     getData();
   });
+
 
   return (
     <div className="flex items-center min-h-screen">
