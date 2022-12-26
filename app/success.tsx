@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image'
 import { useSearchParams } from 'next/navigation';
-import { getNftMetadata } from "../../providers/anker";
+import { getNftMetadata } from "../providers/anker";
 import Link from "next/link";
 
 export default function Print() {
