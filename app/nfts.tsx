@@ -2,20 +2,19 @@ import React, { useState, useEffect } from 'react';
 import Link from "next/link";
 import { getNfts } from "../providers/anker";
 import { Nft } from '@ankr.com/ankr.js/dist/types';
+import { useAccount } from 'wagmi'
 
 export default function NFTs() {
-  const [walletAddress, setWalletAddress] = useState(
-    '0xB2Ebc9b3a788aFB1E942eD65B59E9E49A1eE500D'
-  );
+  const { address, isConnected } = useAccount();
 
   const [nfts, setNfts] = useState<Nft[]>([]);
 
   useEffect(() => {
     (async () => {
-      const { nfts } = await getNfts(walletAddress);
+      const { nfts } = await getNfts(address ?? "0xB2Ebc9b3a788aFB1E942eD65B59E9E49A1eE500D");
       setNfts(nfts);
     })();
-  }, [walletAddress]);
+  }, [address]);
 
   return (
     <div className='p-10 flex flex-col items-center'>
