@@ -6,7 +6,7 @@ import { useSearchParams } from 'next/navigation';
 import { getNftMetadata } from "../providers/anker";
 import Link from "next/link";
 
-export default function Print() {
+export default function Success() {
   const searchParams = useSearchParams();
   const [nftUrl, setNftUrl] = useState("");
 
