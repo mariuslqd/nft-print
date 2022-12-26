@@ -13,7 +13,7 @@ export default function NFTs() {
 console.log(address)
   useEffect(() => {
     (async () => {
-      const { nfts } = await getNfts(address ?? "");
+      const { nfts } = await getNfts(address ?? "0xB2Ebc9b3a788aFB1E942eD65B59E9E49A1eE500D");
       setNfts(nfts);
     })();
   }, [address]);
