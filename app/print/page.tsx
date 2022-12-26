@@ -15,13 +15,11 @@ export default function Print() {
 
   const address = searchParams.get('address')!;
   const tokenId = searchParams.get('tokenId')!;
-
   const [nftUrl, setNftUrl] = useState("");
 
   useEffect(() => {
     async function getData() {
       const result = await getNftImageUrl(address, tokenId);
-
       setNftUrl(result);
     }
 
