@@ -11,13 +11,13 @@ export default function Success() {
     <div className="flex items-center min-h-screen">
         <div className="flex-1 h-full max-w-4xl mx-auto bg-white rounded border">
               <div className="w-full">
-                <h1 className="mb-4 text-2xl font-bold text-center text-gray-700">
+                <h1 className="mb-4 text-4xl font-bold text-center text-gray-700">
                   Success!
                 </h1 >
-                <div className="mb-4 text-2xl items-center justify-center ">
+                <div className="mb-4 items-center justify-center ">
                  <Image src="/giphy.gif" alt="Success gif" width={400} height={400} />
                  </div>
-                 <h2 className="mb-4 text-2xl font-bold text-center text-gray-700">
+                 <h2 className="mb-4 text-1xl font-bold text-center text-gray-700">
                   Our Kitties are getting your order ready!
                  </h2>
                        <h2 className="mb-4 text-2xl font-bold text-center text-gray-700">
