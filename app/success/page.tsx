@@ -23,7 +23,7 @@ export default function Success() {
                  <h2 className="mb-4 text-3xl font-bold text-center text-gray-700">
                   What happens next:
                  </h2>
-                       <h2 className="mb-4 text-2xl font-bold text-left text-gray-700">
+                       <h2 className="mb-4 text-1xl font-bold text-left text-gray-700">
                         <ul>
                           <li>1. We will 4x upscale your NFT via AI</li>
                           <li>2. Create a QR Code, that identifies you as the owner </li>
