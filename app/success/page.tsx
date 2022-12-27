@@ -8,8 +8,6 @@ import Link from "next/link";
 export default function Success() {
 
   return (
-    <div className="flex items-center min-h-screen">
-        <div className="flex-1 h-full max-w-4xl mx-auto bg-white rounded border">
               <div className="w-full">
                 <h1 className="mb-4 text-4xl font-bold text-center text-gray-700">
                   Success!
@@ -30,7 +28,5 @@ export default function Success() {
                          </ul>
                       </h2>
               </div>
-            </div>
-          </div>
   )
 }
