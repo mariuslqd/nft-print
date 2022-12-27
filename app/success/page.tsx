@@ -9,7 +9,7 @@ export default function Success() {
 
   return (
     <div className="flex items-center min-h-screen">
-    <div className="flex-1 h-full max-w-4xl mx-auto bg-white border rounded-md border-blue">
+    <div className="flex-1 h-full max-w-4xl mx-auto bg-white border rounded-md border-blue-400">
       <div className="flex flex-col md:flex-row">
         <div className="h-100 md:h-auto md:w-1/2">
         <h1 className="mb-4 text-4xl font-bold text-center text-gray-700">
