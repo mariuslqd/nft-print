@@ -14,9 +14,9 @@ export default function Success() {
         <div className="h-100 md:h-auto md:w-1/2">
                 <Image src="/giphy.gif" alt="Success gif" width={600} height={600}  />
         </div>
-        <div className="flex items-center justify-center p-4 sm:p-6 md:w-1/2 border rounded-md border-blue-400">
+        <div className="flex items-center justify-center p-4 sm:p-6 md:w-1/2 border rounded-r-md border-blue-400">
               <div className="w-full">
-              <h1 className="mb-4 text-4xl font-bold text-center text-gray-700">
+              <h1 className="mb-4 text-5xl font-bold text-center text-gray-700">
                   Success!
                 </h1 >
                  <h2 className="mb-4 text-2xl font-bold text-center text-gray-700">
