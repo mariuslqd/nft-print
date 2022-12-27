@@ -19,7 +19,7 @@ export default function Success() {
               <h1 className="mb-4 text-5xl font-bold text-center text-gray-700">
                   Success!
                 </h1 >
-                 <h2 className="mb-4 text-2xl font-bold text-center text-gray-700">
+                 <h2 className="mb-4 text-lg font-bold text-center text-gray-700">
                   Next we will:
                  </h2>
                        <h2 className="mb-4 text-lg font-bold text-left text-gray-700">
