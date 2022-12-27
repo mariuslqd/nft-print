@@ -14,7 +14,7 @@ export default function Success() {
                 <h1 className="mb-4 text-4xl font-bold text-center text-gray-700">
                   Success!
                 </h1 >
-                <div className="mb-4 block text-center mx-auto">
+                <div className="mb-4 block text-center">
                  <Image src="/giphy.gif" alt="Success gif" width={300} height={300} />
                  </div>
                  <h2 className="mb-4 text-1xl font-bold text-center text-gray-700">
