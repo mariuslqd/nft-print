@@ -12,10 +12,10 @@ export default function Success() {
         <div className="flex-1 h-full max-w-4xl mx-auto bg-white rounded border">
               <div className="w-full">
                 <h1 className="mb-4 text-2xl font-bold text-center text-gray-700">
-                  Success
+                  Success!
                 </h1 >
-                <div className="items-center justify-center ">
-                 <Image src="/giphy.gif" alt="Success gif" width={480} height={480} />
+                <div className="mb-4 text-2xl items-center justify-center ">
+                 <Image src="/giphy.gif" alt="Success gif" width={400} height={400} />
                  </div>
                  <h2 className="mb-4 text-2xl font-bold text-center text-gray-700">
                   Our Kitties are getting your order ready!
