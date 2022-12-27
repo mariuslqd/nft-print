@@ -9,6 +9,12 @@ export default function Wallet() {
     const { disconnect } = useDisconnect()
     const router = useRouter();
     const [nfts, setNfts] = useState<Nft[]>([]);
+
+    useEffect(() => {
+      if (isLoading) {
+        router.refresh();
+      }
+    }, [isLoading]);
    
     if (isConnected) {
       return (
