@@ -15,7 +15,7 @@ export default function Success() {
         <h1 className="mb-4 text-4xl font-bold text-center text-gray-700">
                   Success!
                 </h1 >
-                <Image src="/giphy.gif" alt="Success gif" width={300} height={300} />
+                <Image src="/giphy.gif" alt="Success gif" width={300} height={300} className="mx-auto" />
                 <h2 className="mb-4 text-1xl font-bold text-center text-gray-700">
                   Our Kitties are getting your order ready!
                  </h2>
