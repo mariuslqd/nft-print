@@ -3,8 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Link from "next/link";
 import { getNfts } from "../providers/anker";
 import { Nft } from '@ankr.com/ankr.js/dist/types';
-import {useAccount} from "wagmi";
-import { useRouter } from 'next/router';
+import { useAccount } from "wagmi";
 
 export default function NFTs() {
   const { address, isConnected } = useAccount();

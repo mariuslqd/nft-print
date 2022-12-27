@@ -30,7 +30,7 @@ export default function Print() {
 
   return (
     <div className="flex items-center min-h-screen">
-        <div className="flex-1 h-full max-w-4xl mx-auto bg-white border border-black">
+        <div className="flex-1 h-full max-w-4xl mx-auto bg-white border border-blue-400 rounded-md">
           <div className="flex flex-col md:flex-row">
             <div className="h-100 md:h-auto md:w-1/2">
               <Image src={nftUrl} alt="NFT image" width={500} height={600}/>
