@@ -8,11 +8,13 @@ import Link from "next/link";
 export default function Success() {
 
   return (
+    <div className="flex items-center min-h-screen">
+        <div className="flex-1 h-full max-w-4xl mx-auto bg-white rounded border">
               <div className="w-full">
                 <h1 className="mb-4 text-4xl font-bold text-center text-gray-700">
                   Success!
                 </h1 >
-                <div className="mb-4 flex text-center">
+                <div className="mb-4 flex text-center mx-auto">
                  <Image src="/giphy.gif" alt="Success gif" width={400} height={400} />
                  </div>
                  <h2 className="mb-4 text-1xl font-bold text-center text-gray-700">
@@ -28,5 +30,7 @@ export default function Success() {
                          </ul>
                       </h2>
               </div>
+            </div>
+          </div>
   )
 }
