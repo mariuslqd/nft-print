@@ -11,9 +11,12 @@ export default function NFTs() {
 
   useEffect(() => {
     (async () => {
+      if (address) {
       const { nfts } = await getNfts(address ?? "");
       setNfts(nfts);
-    })();
+    } else {
+      setNfts([]);
+    }})();
   }, [address]);
 
   return (
