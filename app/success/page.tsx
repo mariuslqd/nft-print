@@ -12,7 +12,7 @@ export default function Success() {
     <div className="flex-1 h-full max-w-4xl mx-auto bg-white border rounded-md border-blue-400">
       <div className="flex flex-col md:flex-row">
         <div className="h-100 md:h-auto md:w-1/2">
-                <Image src="/giphy.gif" alt="Success gif" width={400} height={400} className="mx-auto" />
+                <Image src="/giphy.gif" alt="Success gif" width={600} height={600}  />
         </div>
         <div className="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
               <div className="w-full">
