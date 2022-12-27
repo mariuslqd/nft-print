@@ -14,7 +14,7 @@ export default function Success() {
         <div className="h-100 md:h-auto md:w-1/2">
                 <Image src="/giphy.gif" alt="Success gif" width={600} height={600}  />
         </div>
-        <div className="flex items-center justify-center p-6 sm:p-12 md:w-1/2 border rounded-md border-blue-400">
+        <div className="flex items-center justify-center p-4 sm:p-6 md:w-1/2 border rounded-md border-blue-400">
               <div className="w-full">
               <h1 className="mb-4 text-4xl font-bold text-center text-gray-700">
                   Success!
@@ -22,7 +22,7 @@ export default function Success() {
                  <h2 className="mb-4 text-2xl font-bold text-center text-gray-700">
                   Next we will:
                  </h2>
-                       <h2 className="mb-4 text-base font-bold text-left text-gray-700">
+                       <h2 className="mb-4 text-lg font-bold text-left text-gray-700">
                         <ul>
                           <li>1. 4x upscale your NFT via AI</li>
                           <li>2. Create a QR Code, that identifies you as the owner</li>
