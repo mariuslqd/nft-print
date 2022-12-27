@@ -8,19 +8,21 @@ import Link from "next/link";
 export default function Success() {
 
   return (
-    <div className="flex items-center">
-        <div className="flex-1 h-full max-w-4xl mx-auto bg-white rounded border">
-              <div className="w-full">
-                <h1 className="mb-4 text-4xl font-bold text-center text-gray-700">
+    <div className="flex items-center min-h-screen">
+    <div className="flex-1 h-full max-w-4xl mx-auto bg-white border border-black">
+      <div className="flex flex-col md:flex-row">
+        <div className="h-100 md:h-auto md:w-1/2">
+        <h1 className="mb-4 text-4xl font-bold text-center text-gray-700">
                   Success!
                 </h1 >
-                <div className="mb-4  text-center">
-                 <Image src="/giphy.gif" alt="Success gif" width={300} height={300} className="mx-auto" />
-                 </div>
-                 <h2 className="mb-4 text-1xl font-bold text-center text-gray-700">
+                <Image src="/giphy.gif" alt="Success gif" width={300} height={300} />
+                <h2 className="mb-4 text-1xl font-bold text-center text-gray-700">
                   Our Kitties are getting your order ready!
                  </h2>
-                 <h2 className="mb-4 text-3xl font-bold text-center text-gray-700">
+        </div>
+        <div className="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
+              <div className="w-full">
+                 <h2 className="mb-4 text-2xl font-bold text-center text-gray-700">
                   What happens next:
                  </h2>
                        <h2 className="mb-4 text-1xl font-bold text-left text-gray-700">
@@ -34,6 +36,8 @@ export default function Success() {
                       </h2>
               </div>
             </div>
+          </div>
+          </div>
           </div>
   )
 }
