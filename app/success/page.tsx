@@ -14,13 +14,13 @@ export default function Success() {
                 <h1 className="mb-4 text-4xl font-bold text-center text-gray-700">
                   Success!
                 </h1 >
-                <div className="mb-4 object-center">
+                <div className="mb-4 flex items-center min-h-screen">
                  <Image src="/giphy.gif" alt="Success gif" width={400} height={400} />
                  </div>
                  <h2 className="mb-4 text-1xl font-bold text-center text-gray-700">
                   Our Kitties are getting your order ready!
                  </h2>
-                       <h2 className="mb-4 text-2xl font-bold text-center text-gray-700">
+                       <h2 className="mb-4 text-2xl font-bold text-left text-gray-700">
                         <ul>
                           <li>1. We will 4x upscale your NFT via AI</li>
                           <li>2. Create a QR Code, that identifies you as the owner </li>
