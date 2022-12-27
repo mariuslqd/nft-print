@@ -8,16 +8,7 @@ export default function Wallet() {
     const { disconnect } = useDisconnect()
     const router = useRouter();
    
-    if (isConnected) {
-      return (
-        <div>
-            <button
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-                onClick={() => disconnect()}>{address}
-            </button>
-        </div>
-      )
-    }
+
 
     if (isLoading) {
       router.refresh();
