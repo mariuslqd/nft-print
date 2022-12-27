@@ -21,11 +21,10 @@ export default function Wallet() {
       )
     }
 
-    useEffect(() => {
+    
     if (isLoading) {
       router.refresh();
     }
-    }, [isLoading]);
     return (
       <div>
         {connectors.map((connector) => (
