@@ -27,10 +27,7 @@ export default function Wallet() {
       )
     }
 
-    
-    if (isLoading) {
-      router.refresh();
-    }
+
     return (
       <div>
         {connectors.map((connector) => (
