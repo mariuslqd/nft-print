@@ -35,7 +35,7 @@ export default function Print() {
             <div className="h-100 md:h-auto md:w-1/2">
               <Image src={nftUrl} alt="NFT image" width={500} height={600}/>
             </div>
-            <div className="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
+            <div className="flex items-center justify-center p-4 sm:p-6 md:w-1/2">
               <div className="w-full">
                 <h1 className="mb-4 text-2xl font-bold text-left text-gray-700">
                   Fill in your details
@@ -66,11 +66,11 @@ export default function Print() {
                 </div>
                 <div>
                   <label className="block text-sm">
-                    QR-Code Verification Name
+                    Nickname for QR code
                   </label>
                   <input type="text"
                     className="w-full px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
-                    placeholder="QR-Name" />
+                    placeholder="Nickname" />
                 </div>
                 <Link href={{pathname: '/success',}}>
                 <button
