@@ -12,16 +12,13 @@ export default function Success() {
     <div className="flex-1 h-full max-w-4xl mx-auto bg-white border rounded-md border-blue-400">
       <div className="flex flex-col md:flex-row">
         <div className="h-100 md:h-auto md:w-1/2">
-        <h1 className="mb-4 text-4xl font-bold text-center text-gray-700">
-                  Success!
-                </h1 >
-                <Image src="/giphy.gif" alt="Success gif" width={300} height={300} className="mx-auto" />
-                <h2 className="mb-4 text-1xl font-bold text-center text-gray-700">
-                  Our Kitties are getting your order ready!
-                 </h2>
+                <Image src="/giphy.gif" alt="Success gif" width={400} height={400} className="mx-auto" />
         </div>
         <div className="flex items-center justify-center p-6 sm:p-12 md:w-1/2">
               <div className="w-full">
+              <h1 className="mb-4 text-4xl font-bold text-center text-gray-700">
+                  Success!
+                </h1 >
                  <h2 className="mb-4 text-2xl font-bold text-center text-gray-700">
                   What happens next:
                  </h2>
