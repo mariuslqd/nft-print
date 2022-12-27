@@ -16,7 +16,7 @@ export default function Success() {
                 <h1 className="mb-4 text-2xl font-bold text-left text-gray-700">
                   Success
                 </h1>
-                 <img src="./public/giphy.gif" alt="Success gif" />
+                 <img src="/giphy.gif" alt="Success gif" />
                  <h2 className="mb-4 text-2xl font-bold text-left text-gray-700">
                   Our Kitties are getting your order ready!
                  </h2>
