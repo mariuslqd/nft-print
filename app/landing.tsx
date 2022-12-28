@@ -1,8 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import Link from "next/link";
-import { getNfts } from "../providers/anker";
-import { Nft } from '@ankr.com/ankr.js/dist/types';
 import { useAccount } from "wagmi";
 
 
@@ -13,9 +11,6 @@ return (
     <div className="bg-gradient bg-fade">
    <div className="flex items-center min-h-screen">
     <div className="flex-1 h-full max-w-4xl mx-auto ">
-      {/* <div className="flex flex-col md:flex-row">
-                <Image src="/giphy.gif" alt="Success gif" width={600} height={600}  />
-        </div> */}
         <div className="flex items-center justify-center p-4 sm:p-6 md:w-1/2 border rounded-r-md border-blue-400">
               <div className="w-full">
               <h1 className="mb-4 text-5xl font-bold text-center text-gray-700">
