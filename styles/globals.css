@@ -28,10 +28,25 @@
   body {
     background-color: black;
     color: white;
+    text-align: center;
+    font-family: -apple-system,"system-ui","Segoe UI",sans-serif;
   }
 
   .gradient-button:hover {
     background: transparent;
     border-color:white;
     border: 1px solid rgb(255, 255, 255);
+  }
+
+  .floating-nft-wallet {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    padding: 14px;
+    z-index: 101;
+    background: #111;
+    border-top: 1px solid #30363d;
+    padding-bottom: max(0.75rem,env(safe-area-inset-bottom));
   }
