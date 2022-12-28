@@ -5,10 +5,6 @@ import { getNfts } from "../providers/anker";
 import { Nft } from '@ankr.com/ankr.js/dist/types';
 import { useAccount } from "wagmi";
 
-import Wallet from './wallet';
-import ClientOnly from './clientOnly';
-import WagmiProvider from "../providers/wagmi";
-
 
 export default function NFTs() {
   const { address } = useAccount();
@@ -26,15 +22,6 @@ export default function NFTs() {
 
   return (
     <div className='p-10 flex font-flex-col items-center'>
-    {!address && <h1>Please connect a wallet to view your NFTs.</h1>}
-    {!address &&  
-                                <ClientOnly>
-                                <WagmiProvider>
-                                  <Wallet />
-                                </WagmiProvider>
-                              </ClientOnly>
-                      
-                  }
       <div className='grid grid-cols-4 mt-8 gap-4'>
         {nfts.map((nft) => {
           return <NFTItem key={nft.tokenId} nft={nft} />;

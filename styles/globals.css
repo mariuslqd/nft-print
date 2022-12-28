@@ -23,6 +23,14 @@
     width: calc(100% - 14px);
     padding: 14px;
     font-size: 16px;
+    border: 1px solid transparent;
+  }
+
+
+  .gradient-button:hover {
+    background: transparent;
+    border-color:white;
+    border: 1px solid rgb(255, 255, 255);
   }
 
   body {
@@ -32,11 +40,6 @@
     font-family: -apple-system,"system-ui","Segoe UI",sans-serif;
   }
 
-  .gradient-button:hover {
-    background: transparent;
-    border-color:white;
-    border: 1px solid rgb(255, 255, 255);
-  }
 
   .floating-nft-wallet {
     display: block;

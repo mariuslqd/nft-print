@@ -32,7 +32,7 @@ export default function Wallet() {
       <div>
         {connectors.map((connector) => (
           <button
-            className=  "text-white font-bold rounded gradient-button animate-gradient duration-600 ease-in-out"
+            className=  "text-white font-bold rounded-lg gradient-button animate-gradient duration-600 ease-in-out"
             disabled={!connector.ready}
             key={connector.id}
             onClick={() => connect({ connector })}
