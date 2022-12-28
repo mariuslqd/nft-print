@@ -37,7 +37,7 @@ export default function Wallet() {
             key={connector.id}
             onClick={() => connect({ connector })}
           >
-            Connect Wallet
+            Connect a Wallet to View Your NFT's
             {!connector.ready && ' (unsupported)'}
             {isLoading && connector.id === pendingConnector?.id && ' (connecting)'}
           </button>
