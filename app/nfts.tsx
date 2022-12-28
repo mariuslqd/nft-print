@@ -3,13 +3,11 @@ import React, { useState, useEffect } from 'react';
 import Link from "next/link";
 import { getNfts } from "../providers/anker";
 import { Nft } from '@ankr.com/ankr.js/dist/types';
-import { useAccount,useConnect } from "wagmi";
-
+import { useAccount } from "wagmi";
 
 export default function NFTs() {
-  const { address, isConnected, connector } = useAccount();
+  const { address, isConnected } = useAccount();
   const [nfts, setNfts] = useState<Nft[]>([]);
-  const { connect, connectors, error, isLoading, pendingConnector } = useConnect()
 
   useEffect(() => {
     (async () => {
@@ -22,9 +20,8 @@ export default function NFTs() {
   }, [address]);
 
   return (
-    <div className='p-10 flex font-flex-col items-center'>
-    {!address && <h1>Please connect a wallet to view your NFTs.</h1>}
-
+    <div className='p-10 flex flex-col items-center'>
+            {!address && <h1>Please connect a wallet to view your NFTs.</h1>}
       <div className='grid grid-cols-4 mt-8 gap-4'>
         {nfts.map((nft) => {
           return <NFTItem key={nft.tokenId} nft={nft} />;
