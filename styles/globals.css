@@ -29,7 +29,7 @@
     z-index: 2;
     background: linear-gradient(to bottom,rgba(0,0,0,0.8) 15%,rgba(0,0,0,0.80) 50%,rgba(0,0,0,0.95) 70%,rgba(0,0,0,0.6) 95%, rgba(0,0,0,1) 100%);
     opacity: 0.85;
-    background-image: url("background.jpg");
+    background-image: url("/background.jpg");
 }
 
   .header-promo {
