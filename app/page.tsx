@@ -20,7 +20,7 @@ export default function Home() {
       </div>
     <div>
       <NFTs />
-      {!address && <h1>Please connect a wallet to view your NFTs.</h1>}
+      {!address && <h1 className="text-white">Please connect a wallet to view your NFTs.</h1>}
       </div>
       <div className="floating-nft-wallet">
         <ClientOnly>
