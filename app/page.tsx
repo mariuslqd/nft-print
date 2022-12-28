@@ -20,7 +20,7 @@ export default function Home() {
       <p>🎁 You're getting 50% off for being one of the first 100 Customers! ✨ Use Code: "C100"</p>
       </div>
     <div>
-      <NFTs />
+    {address &&  <NFTs />} 
       {!address &&  <Landing />}
       </div>
       <div className="floating-nft-wallet">
