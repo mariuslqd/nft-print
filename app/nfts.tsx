@@ -5,6 +5,10 @@ import { getNfts } from "../providers/anker";
 import { Nft } from '@ankr.com/ankr.js/dist/types';
 import { useAccount } from "wagmi";
 
+import Wallet from './wallet';
+import ClientOnly from './clientOnly';
+import WagmiProvider from "../providers/wagmi";
+
 
 export default function NFTs() {
   const { address } = useAccount();
@@ -25,10 +29,20 @@ export default function NFTs() {
     {!address && <h1>Please connect a wallet to view your NFTs.</h1>}
     {!address &&  
                       <button
-                        className=" text-white font-bold py-2 px-4 rounded gradient-button animate-gradient duration-500 ease-in-out"
+                        className=" text-white font-bold py-2 px-4 rounded gradient-button animate-gradient duration-600 ease-in-out"
                       >
                         Connect Wallet
                       </button>
+                      
+                  }
+          {!address && <h1>Please connect a wallet to view your NFTs.</h1>}
+    {!address &&  
+                                <ClientOnly>
+                                <WagmiProvider>
+                                  <Wallet />
+                                </WagmiProvider>
+                              </ClientOnly>
+                      
                   }
       <div className='grid grid-cols-4 mt-8 gap-4'>
         {nfts.map((nft) => {

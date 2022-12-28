@@ -15,12 +15,14 @@
   }
   
   .gradient-button {
-    background: linear-gradient(to right, #ff0000, #0000ff);
+    background: linear-gradient(60deg, #f79533,#f37055,#ef4e7b,#a166ab,#5073b8,#1098ad,#07b39b,#6fba82);
     background-size: 200% 100%;
     background-position: 0% 50%;
     transition: all 0.5s ease;
+    animation: gradient 6s ease infinite alternate;
   }
 
   .gradient-button:hover {
-    animation: gradient 2s linear infinite;
+    background-color: transparent;
+    border-color:black;
   }
