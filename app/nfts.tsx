@@ -28,15 +28,6 @@ export default function NFTs() {
     <div className='p-10 flex font-flex-col items-center'>
     {!address && <h1>Please connect a wallet to view your NFTs.</h1>}
     {!address &&  
-                      <button
-                        className=" text-white font-bold py-2 px-4 rounded gradient-button animate-gradient duration-600 ease-in-out"
-                      >
-                        Connect Wallet
-                      </button>
-                      
-                  }
-          {!address && <h1>Please connect a wallet to view your NFTs.</h1>}
-    {!address &&  
                                 <ClientOnly>
                                 <WagmiProvider>
                                   <Wallet />
