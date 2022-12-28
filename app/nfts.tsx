@@ -27,7 +27,6 @@ export default function NFTs() {
     {!address &&  
                       <button
                         className=" text-white font-bold py-2 px-4 rounded gradient-button animate-gradient duration-500 ease-in-out"
-                        onClick={() => connect()}
                       >
                         Connect Wallet
                       </button>
