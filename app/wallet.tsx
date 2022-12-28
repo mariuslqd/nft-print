@@ -32,12 +32,12 @@ export default function Wallet() {
       <div>
         {connectors.map((connector) => (
           <button
-            className=  "text-white font-bold py-2 px-4 rounded gradient-button animate-gradient duration-600 ease-in-out"
+            className=  "text-white font-bold rounded gradient-button animate-gradient duration-600 ease-in-out"
             disabled={!connector.ready}
             key={connector.id}
             onClick={() => connect({ connector })}
           >
-            Connect a Wallet to View Your NFT's
+            Connect a Wallet to view your NFT's
             {!connector.ready && ' (unsupported)'}
             {isLoading && connector.id === pendingConnector?.id && ' (connecting)'}
           </button>
