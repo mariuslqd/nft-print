@@ -14,7 +14,13 @@
     }
   }
 
-  .netflix-gradient {
+  .bg-gradient {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 56px;
+    background-color: #111;
+    z-index: 10;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -23,6 +29,7 @@
     z-index: 2;
     background: linear-gradient(to bottom,rgba(0,0,0,0.8) 15%,rgba(0,0,0,0.80) 50%,rgba(0,0,0,0.95) 70%,rgba(0,0,0,0.6) 95%, rgba(0,0,0,1) 100%);
     opacity: 0.85;
+    background-image: url("background.jpg");
 }
 
   .header-promo {
@@ -63,6 +70,7 @@
     color: white;
     text-align: center;
     font-family: -apple-system,"system-ui","Segoe UI",sans-serif;
+    
   }
 
 
