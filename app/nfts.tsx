@@ -3,13 +3,12 @@ import React, { useState, useEffect } from 'react';
 import Link from "next/link";
 import { getNfts } from "../providers/anker";
 import { Nft } from '@ankr.com/ankr.js/dist/types';
-import { useAccount,useConnect } from "wagmi";
+import { useAccount } from "wagmi";
 
 
 export default function NFTs() {
   const { address } = useAccount();
   const [nfts, setNfts] = useState<Nft[]>([]);
-  const { connect } = useConnect()
 
   useEffect(() => {
     (async () => {
