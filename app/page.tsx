@@ -11,6 +11,8 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
+    <div className="header-promo">
+      <p>🎁 You're getting 50% off, for being the in the first 100 Customers! Use Code: "C100"</p>
     <div>
       <NFTs />
       <div className="floating-nft-wallet">
@@ -19,6 +21,7 @@ export default function Home() {
               <Wallet />
           </WagmiProvider>
         </ClientOnly>
+    </div>
     </div>
       </div>
   )
