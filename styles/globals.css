@@ -23,9 +23,16 @@
     max-width: 512px;
     width: calc(100% - 14px);
     padding: 14px;
+    font-size: 16px;
+  }
+
+  body {
+    background-color: black;
+    color: white;
   }
 
   .gradient-button:hover {
     background: transparent;
-    border-color:black;
+    border-color:white;
+    border: 1px solid rgb(255, 255, 255);
   }
