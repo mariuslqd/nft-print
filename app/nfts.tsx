@@ -24,18 +24,7 @@ export default function NFTs() {
   return (
     <div className='p-10 flex font-flex-col items-center'>
     {!address && <h1>Please connect a wallet to view your NFTs.</h1>}
-    {!address &&  connectors.map((connector) => (
-                      <button
-                        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-                        disabled={!connector.ready}
-                        key={connector.id}
-                        onClick={() => connect({ connector })}
-                      >
-                        Connect Wallet
-                        {!connector.ready && ' (unsupported)'}
-                        {isLoading && connector.id === pendingConnector?.id && ' (connecting)'}
-                      </button>
-                    ))}
+
       <div className='grid grid-cols-4 mt-8 gap-4'>
         {nfts.map((nft) => {
           return <NFTItem key={nft.tokenId} nft={nft} />;
