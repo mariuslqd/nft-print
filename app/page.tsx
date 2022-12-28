@@ -2,6 +2,7 @@
 
 import { Inter } from '@next/font/google'
 import NFTs from './nfts';
+import Landing from './landing';
 
 import Wallet from './wallet';
 import ClientOnly from './clientOnly';
@@ -20,7 +21,7 @@ export default function Home() {
       </div>
     <div>
       <NFTs />
-      {!address && <h1 className="text-white">Please connect a wallet to view your NFTs.</h1>}
+      {!address &&  <Landing />}
       </div>
       <div className="floating-nft-wallet">
         <ClientOnly>
