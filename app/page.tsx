@@ -6,17 +6,21 @@ import NFTs from './nfts';
 import Wallet from './wallet';
 import ClientOnly from './clientOnly';
 import WagmiProvider from "../providers/wagmi";
+import { useAccount } from "wagmi";
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const { address } = useAccount();
+
   return (
     <div>
     <div className="header-promo">
-      <p>🎁 You're getting 50% off, for being one of the first 100 Customers! Use Code: "C100"</p>
+      <p>🎁 You're getting 50% off for being one of the first 100 Customers! ✨ Use Code: "C100"</p>
       </div>
     <div>
       <NFTs />
+      {!address && <h1>Please connect a wallet to view your NFTs.</h1>}
       </div>
       <div className="floating-nft-wallet">
         <ClientOnly>
