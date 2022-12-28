@@ -10,7 +10,7 @@ export default function Landing() {
   const { address } = useAccount();
 
 return (
-    <div className="bg-gradient ">
+    <div className="bg-gradient bg-fade">
 <h1 className="text-white">Please connect a wallet to view your NFTs.</h1>
 </div>
 )
