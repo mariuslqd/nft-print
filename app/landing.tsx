@@ -15,7 +15,7 @@ return (
               <div className="w-full">
               <h1 className="mb-4 text-5xl font-bold text-center text-gray-700">
                   Create your own
-                  <br/>non-fungible
+                  <br/><span className="highlight-stroke">non-fungible</span>
                   NFT prints
                 </h1 >
                  <h2 className="mb-4 text-lg font-bold text-center text-gray-700">
