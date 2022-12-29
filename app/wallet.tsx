@@ -22,7 +22,7 @@ export default function Wallet() {
         <div>
             <button
                 className="text-white font-bold rounded-lg gradient-button animate-gradient duration-600 ease-in-out"
-                onClick={() => disconnect()}>{`...${address.substring(address.length - 4)}`}
+                onClick={() => disconnect()}>Disconnect wallet: {`...${address.substring(address.length - 4)}`}
             </button>
         </div>
       )
