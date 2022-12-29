@@ -18,10 +18,7 @@ return (
                   <br/><span className="highlight-stroke">non-fungible</span>
                   NFT prints
                 </h1 >
-                 <h2 className="mb-4 text-lg font-bold text-center text-gray-700">
-                  Next we will:
-                 </h2>
-                       <h2 className="mb-4 text-lg font-bold text-left text-gray-700">
+                       <h2 className="pt-5 text-lg font-bold text-left text-white">
                         <ul>
                           <li>1. 4x upscale your NFT via AI</li>
                           <li>2. Create a QR Code, that identifies you as the owner</li>
