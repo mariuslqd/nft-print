@@ -21,7 +21,7 @@ export default function NFTs() {
   }, [address]);
 
   return (
-    <div className='p-10 flex font-flex-col items-center justify-center'>
+    <div className='nft-viewer mb-10 p-10 flex font-flex-col items-center justify-center'>
       <div className='grid grid-cols-4 mt-8 gap-4'>
         {nfts.map((nft) => {
           return <NFTItem key={nft.tokenId} nft={nft} />;
@@ -43,7 +43,7 @@ function NFTItem({ nft }: any) {
     >
       <div
         key={`${nft.contractAddress}/${nft.tokenId}`}
-        className='flex flex-col rounded border p-4'
+        className='flex flex-col p-4'
       >
         <img
           className='w-[200px] h-[200px] rounded shadow'
