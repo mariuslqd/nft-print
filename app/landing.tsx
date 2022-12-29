@@ -17,15 +17,13 @@ return (
                   <br/><span className="highlight-stroke">non-fungible</span>
                   NFT prints
                 </h1 >
-                       <h2 className="pt-5 text-lg font-bold text-center text-white">
-                        <ul>
+                        <ul className="pt-5 text-lg font-bold text-center text-white">
                           <li>1. 4x upscale your NFT via AI</li>
                           <li>2. Create a QR Code, that identifies you as the owner</li>
                           <li>3. Design the Mockup and send it to you via email with the Payment instructions</li>
                           <li>4. After you approved the design and paid, we will send out your order</li>
                           <li>5. You will get the tracking details for your shipment send via Email</li>
                          </ul>
-                      </h2>
               </div>
             </div>
           </div>
