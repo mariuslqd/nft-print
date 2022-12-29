@@ -17,15 +17,18 @@ export default function Wallet() {
     }, [isLoading]);
    
     if (isConnected) {
+      if (address) {
       return (
         <div>
             <button
                 className="text-white font-bold rounded-lg gradient-button animate-gradient duration-600 ease-in-out"
-                onClick={() => disconnect()}>{address}
+                onClick={() => disconnect()}>{`...${address.substring(address.length - 4)}`}
             </button>
         </div>
       )
     }
+      // Render something else if the address is not defined
+}
 
 
     return (
