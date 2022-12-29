@@ -16,13 +16,13 @@
 
   @keyframes border {
     0% {
-      border-color: #f79533;
+      border-color: #1098ad;
     }
     50% {
       border-color: #a166ab;
     }
     100% {
-      border-color: #1098ad;
+      border-color: #f79533;
     }
   }
 
@@ -153,11 +153,11 @@
 }
 
 .nft-viewer .grid a {
-    border: 2px solid white;
+    border: 2px solid #1098ad;
     border-radius: 7px;
 
 }
 
 .nft-viewer .grid a:hover {
-    animation: border 3s ease infinite alternate;
+    animation: border 2s ease infinite alternate;
 }
