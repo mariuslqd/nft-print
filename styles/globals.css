@@ -14,6 +14,18 @@
     }
   }
 
+  @keyframes border {
+    0% {
+      border-color: #f79533;
+    }
+    50% {
+      border-color: #a166ab;
+    }
+    100% {
+      border-color: #1098ad;
+    }
+  }
+
   .bg-fade {
     background: linear-gradient(to bottom,rgba(0,0,0,0.6) 15%,rgba(0,0,0,0.75) 50%,rgba(0,0,0,0.85) 70%,rgba(0,0,0,0.7) 95%, rgba(0,0,0,1) 100%);
   }
@@ -92,6 +104,9 @@
     border: 1px solid transparent;
   }
 
+  /* .animate-border:hover {
+    animation: border 6s ease infinite alternate;
+  } */
 
   .gradient-button:hover {
     background: transparent;
@@ -138,6 +153,7 @@
 }
 
 .nft-viewer .grid a {
-    border: 1px solid white;
-    border-radius: 10px;
+    border: 2px solid white;
+    border-radius: 7px;
+    animation: border 6s ease infinite alternate;
 }
