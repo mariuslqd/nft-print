@@ -22,7 +22,7 @@ export default function NFTs() {
 
   return (
     <div className='nft-viewer mb-10 p-10 flex font-flex-col items-center justify-center'>
-      <div className='grid grid-cols-4 mt-8 gap-4 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1'>
+      <div className='grid mt-8 gap-4 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1'>
         {nfts.map((nft) => {
           return <NFTItem key={nft.tokenId} nft={nft} />;
         })}
