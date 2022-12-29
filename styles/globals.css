@@ -155,5 +155,9 @@
 .nft-viewer .grid a {
     border: 2px solid white;
     border-radius: 7px;
-    animation: border 6s ease infinite alternate;
+
+}
+
+.nft-viewer .grid a:hover {
+    animation: border 3s ease infinite alternate;
 }
