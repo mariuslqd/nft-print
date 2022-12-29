@@ -15,16 +15,9 @@
   }
 
   .bg-fade {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -2;
     background: linear-gradient(to bottom,rgba(0,0,0,0.6) 15%,rgba(0,0,0,0.70) 50%,rgba(0,0,0,0.8) 70%,rgba(0,0,0,0.6) 95%, rgba(0,0,0,1) 100%);
-
-
   }
+  
   .bg-gradient {
     height: calc(100vh - 48px);
     position: relative;
@@ -61,7 +54,7 @@
 
   .header-promo {
     background: linear-gradient(60deg,#f79533,#f37055,#ef4e7b,#a166ab,#5073b8,#1098ad,#07b39b,#6fba82);
-    padding: 21px;
+    padding: 16px;
     width: 100%;
     height: auto;
     font-size: 16px;

@@ -11,14 +11,13 @@ return (
     <div className='bg-gradient'>
     <div className=" bg-fade">
    <div className="flex items-center min-h-screen">
-    <div className="flex-1 h-full max-w-4xl mx-auto ">
-              <div className="w-full">
+    <div className="centered-box ">
               <h1 className="mb-4 text-5xl font-bold text-center text-gray-700">
                   Create your own
                   <br/><span className="highlight-stroke">non-fungible</span>
                   NFT prints
                 </h1 >
-                       <h2 className="pt-5 text-lg font-bold text-left text-white">
+                       <h2 className="pt-5 text-lg font-bold text-center text-white">
                         <ul>
                           <li>1. 4x upscale your NFT via AI</li>
                           <li>2. Create a QR Code, that identifies you as the owner</li>
@@ -29,7 +28,6 @@ return (
                       </h2>
               </div>
             </div>
-          </div>
           </div>
           </div>
 )
