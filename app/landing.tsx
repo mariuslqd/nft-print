@@ -11,7 +11,7 @@ return (
     <div className='bg-gradient'>
     <div className=" bg-fade">
    <div className="flex items-center min-h-screen">
-    <div className="centered-box ">
+    <div className="centered-box">
               <h1 className="mb-4 text-5xl font-bold text-center text-gray-700">
                   Create your own
                   <br/><span className="highlight-stroke">non-fungible</span>
