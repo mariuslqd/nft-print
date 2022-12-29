@@ -8,7 +8,9 @@ export default function Landing() {
   const { address } = useAccount();
 
 return (
+    <div>
     <div className="bg-gradient bg-fade">
+    </div>
    <div className="flex items-center min-h-screen">
     <div className="flex-1 h-full max-w-4xl mx-auto ">
               <div className="w-full">
