@@ -53,6 +53,12 @@
     width: 100%;
 }
 
+@media (min-width: 1000px) {
+    .bg-gradient h1 {
+      font-size: 9vw;
+    }
+  }
+
 .bg-gradient .centered-box {
     position: absolute;
     top: 50%;

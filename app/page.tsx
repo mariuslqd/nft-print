@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div>
     <div className="header-promo">
-      <p>🎁 You're getting 50% off for being one of the first 100 Customers! ✨ Use Code: "C100"</p>
+      <p>🎁 You're getting 50% off for being one of the first 100 Customers! ✨ Use Code: C100</p>
       </div>
     <div>
     {address &&  <NFTs />} 
