@@ -28,7 +28,7 @@ export default function Print() {
     }
 
     getData();
-  }, []);
+  });
 
 
     // Add state for the form data
