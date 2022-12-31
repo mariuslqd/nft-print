@@ -19,6 +19,12 @@ export default function Print() {
   const [nftUrl, setNftUrl] = useState("");
     // Add the Router import
   const router = useRouter();
+  const [route, setRoute] = useState()
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [twitter, setTwitter] = useState('');
+  const [instagram, setInstagram] = useState('');
+  const [linkedin, setLinkedin] = useState('');
   
   useEffect(() => {
     async function getData() {
@@ -31,33 +37,17 @@ export default function Print() {
   });
 
 
-    // Add state for the form data
-    const [formData, setFormData] = useState({
-      name: '',
-      email: '',
-      twitter: '',
-      instagram: '',
-      linkedin: '',
-    });
-    
 
-    const handleSubmit = (event: { preventDefault: () => void }) => {
-      event.preventDefault();
+    const handleSubmit = (e: React.FormEvent) => {
+      e.preventDefault();
       // Create the new page with the NFT address and tokenId as the URL
       router.push({
         pathname: '/[address]/[tokenId]',
         query: {
           address: address,
-          tokenId: tokenId
+          tokenId: tokenId,
+          
         }
-      });
-    }
-
-    // Add a change handler for the form input
-    const handleChange = (event: { target: { name: string; value: string } }) => {
-      setFormData({
-        ...formData,
-        [event.target.name]: event.target.value,
       });
     }
     
@@ -78,14 +68,14 @@ export default function Print() {
                     These details will be visible to anyone who has the link of the QR-Code!
                   </span>
                 </h1>
-                <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
                 <div>
                   <label className="block text-sm">
                     Name/Nickname
                   </label>
                   <input type="text" name="name"
                     className="w-full px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
-                    placeholder="Name" value={formData.name} onChange={handleChange}/>
+                    placeholder="Name" value={name} onChange={(e) => setName(e.target.value)}/>
                 </div>
                 <div className="mt-4">
                   <label className="block text-sm">
@@ -93,7 +83,7 @@ export default function Print() {
                   </label>
                   <input type="email" name="email"
                     className="w-full px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
-                    placeholder="Email Address" value={formData.email} onChange={handleChange}/>
+                    placeholder="Email Address" value={email} onChange={(e) => setEmail(e.target.value)}/>
                 </div>
                 <div>
                     <label className="block text-sm">
@@ -101,7 +91,7 @@ export default function Print() {
                     </label>
                     <input type="url" name="twitter"
                       className="w-full px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
-                      placeholder="link" value={formData.twitter} onChange={handleChange}/>
+                      placeholder="link" value={twitter} onChange={(e) => setTwitter(e.target.value)}/>
                   </div>
                 <div>
                     <label className="block text-sm">
@@ -109,7 +99,7 @@ export default function Print() {
                     </label>
                     <input type="url" name="instagram"
                       className="w-full px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
-                      placeholder="link" value={formData.instagram} onChange={handleChange}/>
+                      placeholder="link" value={instagram} onChange={(e) => setInstagram(e.target.value)}/>
                   </div>
                   <div>
                     <label className="block text-sm">
@@ -117,7 +107,7 @@ export default function Print() {
                     </label>
                     <input type="url" name="linkedin"
                       className="w-full px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
-                      placeholder="link" value={formData.linkedin} onChange={handleChange}/>
+                      placeholder="link" value={linkedin} onChange={(e) => setLinkedin(e.target.value)}/>
                   </div>
                 <div>
                 <button
