@@ -7,6 +7,7 @@ import { getNftMetadata } from "../../providers/anker";
 import Link from "next/link";
 import { Router, useRouter } from 'next/router';
 
+
 async function getNftImageUrl(address: string, tokenId: string) {
   const res = await getNftMetadata(address, tokenId);
   return res.attributes?.imageUrl ?? ""
@@ -38,14 +39,14 @@ export default function Print() {
 
 
 
-    const handleSubmit = (e: React.FormEvent) => {
-      e.preventDefault();
-      // Create the new page with the NFT address and tokenId as the URL
-      router.push(
-        '/display-data',
-        `/display-data?address=${address}&tokenId=${tokenId}&name=${name}&email=${email}&twitter=${twitter}&instagram=${instagram}&linkedin=${linkedin}`
-      );
-    };
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Navigate to the /display route with the form input as query parameters
+    router.push(
+      '/display',
+      `/display?address=${address}&tokenId=${tokenId}&name=${name}&email=${email}&twitter=${twitter}&instagram=${instagram}&linkedin=${linkedin}`
+    );
+  };
     
   
 
