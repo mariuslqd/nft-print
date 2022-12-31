@@ -41,15 +41,11 @@ export default function Print() {
     const handleSubmit = (e: React.FormEvent) => {
       e.preventDefault();
       // Create the new page with the NFT address and tokenId as the URL
-      router.push({
-        pathname: '/[address]/[tokenId]',
-        query: {
-          address: address,
-          tokenId: tokenId,
-          
-        }
-      });
-    }
+      router.push(
+        '/display-data',
+        `/display-data?address=${address}&tokenId=${tokenId}&name=${name}&email=${email}&twitter=${twitter}&instagram=${instagram}&linkedin=${linkedin}`
+      );
+    };
     
   
 
