@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image'
 import { useSearchParams } from 'next/navigation';
 import { getNftMetadata } from "../../providers/anker";
+import Link from "next/link";
 
 
 async function getNftImageUrl(address: string, tokenId: string) {
@@ -40,8 +41,6 @@ export default function Print() {
                 <h1  className="text-3xl font-bold text-center text-black">
                   Fill in your details for NFT verification
                 </h1>
-
-            <form className="block text-sm text-left text-black font-bold space-y-2">
                 <div>
                   <label>
                     Name/Nickname
@@ -66,7 +65,7 @@ export default function Print() {
                       className="w-full px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
                       placeholder="Twitter link"/>
                   </div>
-                {/* <div>
+                <div>
                     <label>
                       Instagram
                     </label>
@@ -81,26 +80,18 @@ export default function Print() {
                     <input type="url" name="linkedin"
                       className="w-full px-4 py-2 text-sm border rounded-md focus:border-blue-400 focus:outline-none focus:ring-1 focus:ring-blue-600"
                       placeholder="link" />
-                  </div> */}
-                <div>
-                <button
-                      className="block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-blue-600 border border-transparent rounded-lg active:bg-blue-600 hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue"
-                      type="submit"                      >
-                      Choose the Product
-                    </button>
-                {/* <Link href={{pathname: '/success',}}>
+                  </div>
+                <Link href={{pathname: '/success',}}>
                 <button
                   className="block w-full px-4 py-2 mt-4 text-sm font-medium leading-5 text-center text-white transition-colors duration-150 bg-blue-600 border border-transparent rounded-lg active:bg-blue-600 hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue"
                   >
                   Choose the Product
                 </button>
-                </Link> */}
+                </Link>
               </div>
-              </form>
             </div>
           </div>
         </div>
-      </div>
-      </div>
+        </div>
   );
 }
