@@ -9,7 +9,8 @@ export default function Header() {
   return (
     <nav className="flex items-center justify-between flex-wrap p-6">
         <div className="logo">
-          <Link href="/" className="mb-4 text-3xl font-extrabold tracking-tight leading-none text-white">NFT Pod</Link>
+          <Link href="/" className="mb-4 text-3xl font-extrabold tracking-tight leading-none text-white">NFT Pod </Link>
+          <span className="logo-beta">Beta</span>
         </div>
         <div className="flex-grow">
         </div>

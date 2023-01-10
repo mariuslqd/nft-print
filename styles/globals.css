@@ -35,11 +35,23 @@
     position: relative;
     overflow: hidden;
     background-color: #111;
-    z-index: -10;
     background-image: url("/background.jpg");
     background-size: cover;
     background-position: right;
 }
+
+.bg-gradient2 h1 {
+  line-height: 1;
+  text-shadow: 5px 3px 14px rgb(0 0 0 / 70%);
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  font-family: -apple-system,system-ui,Segoe UI,sans-serif;
+  margin: 0;
+  width: 100%;
+}
+
 
 .bg-gradient h1 {
     line-height: 1;
@@ -66,6 +78,15 @@
     transform: translateY(-50%) translateX(-50%);
     z-index: 1000000;
     width: 100%;
+}
+
+.bg-gradient2 .centered-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  z-index: 1000000;
+  width: 100%;
 }
 
 .bg-gradient .centered-box li {
@@ -97,7 +118,27 @@
     position: absolute;
     top: 0;
   }
-  
+
+  .gradient-button2 {
+    background: linear-gradient(60deg, #f79533,#f37055,#ef4e7b,#a166ab,#5073b8,#1098ad,#07b39b,#6fba82);
+    background-position: 0% 50%;
+    animation: gradient 6s ease infinite alternate;
+    background-size: 300% 300%;
+    max-width: 512px;
+    width: calc(100% - 14px);
+    padding: 14px;
+    font-size: 18px;
+    border: 1px solid transparent;
+  }
+
+  .gradient-button2:hover {
+    background: transparent;
+    border-color:black;
+    border: 1px solid rgb(0, 0, 0);
+    color: black;
+  }
+
+
   .gradient-button {
     background: linear-gradient(60deg, #f79533,#f37055,#ef4e7b,#a166ab,#5073b8,#1098ad,#07b39b,#6fba82);
     background-position: 0% 50%;
@@ -166,4 +207,64 @@
 
 .nft-viewer .grid a:hover {
     animation: border 2s ease infinite alternate;
+}
+
+
+.logo-beta {
+  position: absolute;
+  top: 0;
+  right:10;
+  font-size: 15px;
+}
+
+.formfield input {
+  border-color: #1098ad;
+  border-width: 1px;
+  border-radius: 3px;
+  margin-bottom: 3px;
+  margin-left: 10px;
+}
+
+.formfield select {
+  border-color: #1098ad;
+  border-width: 1px;
+  border-radius: 3px;
+  margin-bottom: 3px;
+  margin-left: 10px;
+  min-width: 215px;
+}
+
+.formfield label {
+  min-width: 120px;
+  text-align: left;
+  display: inline-flex;
+}
+
+
+.formfield label {
+  min-width: 120px;
+  text-align: left;
+  display: inline-flex;
+}
+
+.StripeElement {
+  display: block;
+  margin: 5px 0;
+  max-width: 500px;
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 1em;
+  font-family: 'Source Code Pro', monospace;
+  box-shadow: rgba(50, 50, 93, 0.14902) 0px 1px 3px,
+    rgba(0, 0, 0, 0.0196078) 0px 1px 0px;
+  border-radius: 4px;
+  background: white;
+  border-color: #1098ad;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+.crossed-out {
+  text-decoration: line-through;
+  text-decoration-color: black;
 }
