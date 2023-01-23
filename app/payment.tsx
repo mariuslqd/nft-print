@@ -160,11 +160,11 @@ export default function SignupForm() {
   <label htmlFor="twitter">Instagram</label>
   <input id="twitter" type="text" name="twitter" placeholder="@username" />
   <ValidationError errors={state.errors} />
+  </div>
   <div>
   <label htmlFor="twitter">Linkedin</label>
   <input id="twitter" type="text" name="twitter" placeholder="@username" />
   <ValidationError errors={state.errors} />
-</div>
 </div>
 <div>
       {/* <button className="mt-4 gradient-button2 text-white font-bold rounded-lg animate-gradient duration-600 ease-in-out" type="submit" disabled={state.submitting}>
