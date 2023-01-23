@@ -45,6 +45,8 @@ export default function SignupForm() {
   const address = searchParams.get('address')!;
   const tokenId = searchParams.get('tokenId')!;
   const [nftUrl, setNftUrl] = useState("");
+
+
   
   useEffect(() => {
     async function getData() {
@@ -61,9 +63,9 @@ export default function SignupForm() {
   if (state.succeeded) {
     return (
       <div className='text-black font-bold text-lg '>
-        Payment has been processed successfully!
-        <Link href="/success">
-          <button className='mt-5 gradient-button2 text-white font-bold rounded-lg animate-gradient duration-600 ease-in-out'>What happens next?</button>
+        We received your details!
+        <Link href="https://buy.stripe.com/7sIcOOa3FgAS7yU3cc">
+          <button className='mt-5 gradient-button2 text-white font-bold rounded-lg animate-gradient duration-600 ease-in-out'><span>Pay <span className="crossed-out">$90</span> <span>NOW $45</span> </span></button>
         </Link>
       </div>
     );
@@ -79,26 +81,8 @@ export default function SignupForm() {
       <input type="hidden" name="imageUrl" value={nftUrl} />
   </div>
   <div>
-        <label htmlFor="name">Full Name</label>
+        <label htmlFor="name">Nickname</label>
         <input id ="name" type="text" name="name" required/>
-        <ValidationError errors={state.errors} />
-      </div>
-      <div>
-        <label htmlFor="phone">Phone</label>
-        <input id="phone" type="text" name="phone" required/>
-        <ValidationError errors={state.errors} />
-      </div>
-      <div>
-        <label htmlFor="address">Street</label>
-        <input id="street" type="text" name="street" required />
-        </div>
-        <div>
-        <label htmlFor="address">City</label>
-        <input id="City" type="text" name="City"  required/>
-        </div>
-        <div>
-        <label htmlFor="address">Zip</label>
-        <input id="Zip" type="text" name="Zip"  required/>
         <ValidationError errors={state.errors} />
       </div>
       <div>
@@ -163,7 +147,7 @@ export default function SignupForm() {
   <label htmlFor="product">Product</label>
   <select id="product" name="product" required>
     <option value="">Select a product</option>
-    <option value="canvas">Canvas</option>
+    <option value="canvas">Canvas 12″/30cm $45</option>
   </select>
   <ValidationError errors={state.errors} />
 </div>
@@ -172,17 +156,24 @@ export default function SignupForm() {
   <input id="twitter" type="text" name="twitter" placeholder="@username" />
   <ValidationError errors={state.errors} />
 </div>
-      <div>
-        <label className='text-center'>Card Payment via Stripe</label>
-        <CardElement options={options} />
-        <ValidationError
-          field="paymentMethod"
-          errors={state.errors}
-        />
-      </div>
-      <button className="mt-4 gradient-button2 text-white font-bold rounded-lg animate-gradient duration-600 ease-in-out" type="submit" disabled={state.submitting}>
+<div>
+  <label htmlFor="twitter">Instagram</label>
+  <input id="twitter" type="text" name="twitter" placeholder="@username" />
+  <ValidationError errors={state.errors} />
+  <div>
+  <label htmlFor="twitter">Linkedin</label>
+  <input id="twitter" type="text" name="twitter" placeholder="@username" />
+  <ValidationError errors={state.errors} />
+</div>
+</div>
+<div>
+      {/* <button className="mt-4 gradient-button2 text-white font-bold rounded-lg animate-gradient duration-600 ease-in-out" type="submit" disabled={state.submitting}>
         {state.submitting ? 'Processing payment...' : <span>Pay <span className="crossed-out">$90</span> <span>NOW $45</span> </span>}
-      </button>
+      </button> */}
+              <button type="submit" disabled={state.submitting} className="mt-4 gradient-button2 text-white font-bold rounded-lg animate-gradient duration-600 ease-in-out">
+              {state.submitting ? 'Submitting...' : 'Submit' }
+        </button>
+        </div>
     </form>
     </div>
   )
