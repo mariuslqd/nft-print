@@ -6,7 +6,7 @@ import {
     CardElement, 
     ValidationError 
   } from '@formspree/react';
-  import React, { useState, useEffect } from 'react';
+  import React, { useState, useEffect, ChangeEvent } from 'react';
   import Link from 'next/link'
   import { useSearchParams } from 'next/navigation';
   import { getNftMetadata } from "../providers/anker";
@@ -46,7 +46,19 @@ export default function SignupForm() {
   const tokenId = searchParams.get('tokenId')!;
   const [nftUrl, setNftUrl] = useState("");
 
+  //new
+  const canvasImageUrl = '/canvas.jpg';
+  const [selectedOption, setSelectedOption] = useState("");
+  const [hiddenproduct, setClassName] = useState("hidden");
 
+const handleSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
+    setSelectedOption(e.target.value);
+    if (e.target.value === 'canvas') {
+      setClassName("canvas");
+    } else {
+      setClassName("hidden");
+    }
+  }
   
   useEffect(() => {
     async function getData() {
@@ -82,7 +94,7 @@ export default function SignupForm() {
   </div>
   <div>
         <label htmlFor="name">Nickname</label>
-        <input id ="name" type="text" name="name" required/>
+        <input id ="name" type="text" name="name" required />
         <ValidationError errors={state.errors} />
       </div>
       <div>
@@ -145,32 +157,33 @@ export default function SignupForm() {
 </div>
 <div>
   <label htmlFor="product">Product</label>
-  <select id="product" name="product" required>
+  <select id="product" name="product"   required onChange={handleSelectChange} >
     <option value="">Select a product</option>
-    <option value="canvas">Canvas 12″/30cm $45</option>
+    <option value="canvas">Canvas 12″/30cm $40</option>
   </select>
   <ValidationError errors={state.errors} />
 </div>
+<div className={hiddenproduct}>
+<img src={canvasImageUrl} alt="Canvas product image"  width={148} height={148} />
+        </div>
 <div>
   <label htmlFor="twitter">Twitter</label>
   <input id="twitter" type="text" name="twitter" placeholder="@username" />
   <ValidationError errors={state.errors} />
 </div>
 <div>
-  <label htmlFor="twitter">Instagram</label>
-  <input id="twitter" type="text" name="twitter" placeholder="@username" />
+  <label htmlFor="instagram">Instagram</label>
+  <input id="instagram" type="text" name="instagram" placeholder="@username" />
   <ValidationError errors={state.errors} />
   </div>
   <div>
-  <label htmlFor="twitter">Linkedin</label>
-  <input id="twitter" type="text" name="twitter" placeholder="@username" />
+  <label htmlFor="linkedin">Linkedin</label>
+  <input id="linkedin" type="text" name="linkedin" placeholder="URL" />
   <ValidationError errors={state.errors} />
 </div>
+
 <div>
-      {/* <button className="mt-4 gradient-button2 text-white font-bold rounded-lg animate-gradient duration-600 ease-in-out" type="submit" disabled={state.submitting}>
-        {state.submitting ? 'Processing payment...' : <span>Pay <span className="crossed-out">$90</span> <span>NOW $45</span> </span>}
-      </button> */}
-              <button type="submit" disabled={state.submitting} className="mt-4 gradient-button2 text-white font-bold rounded-lg animate-gradient duration-600 ease-in-out">
+              <button type="submit" disabled={state.submitting} className=" mt-2 gradient-button2 text-white font-bold rounded-lg animate-gradient duration-600 ease-in-out">
               {state.submitting ? 'Submitting...' : 'Submit' }
         </button>
         </div>

@@ -268,3 +268,12 @@
   text-decoration: line-through;
   text-decoration-color: black;
 }
+
+.canvas {
+  display: flex;
+  justify-content: center;
+  left: 30px;
+  position: relative;
+  align-items: center;
+    }
+    
