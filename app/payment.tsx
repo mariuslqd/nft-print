@@ -76,8 +76,8 @@ const handleSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
     return (
       <div className='text-black font-bold text-lg '>
         We received your details!
-        <Link href="https://buy.stripe.com/7sIcOOa3FgAS7yU3cc">
-          <button className='mt-5 gradient-button2 text-white font-bold rounded-lg animate-gradient duration-600 ease-in-out'><span>Pay <span className="crossed-out">$90</span> <span>NOW $45</span> </span></button>
+        <Link href="https://buy.stripe.com/9AQbKKgs398qbPa7st">
+          <button className='mt-5 gradient-button2 text-white font-bold rounded-lg animate-gradient duration-600 ease-in-out'><span>Pay <span className="crossed-out">$100</span> <span>NOW $50</span> </span></button>
         </Link>
       </div>
     );
@@ -159,7 +159,7 @@ const handleSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
   <label htmlFor="product">Product</label>
   <select id="product" name="product"   required onChange={handleSelectChange} >
     <option value="">Select a product</option>
-    <option value="canvas">Canvas 12″/30cm $40</option>
+    <option value="canvas">Canvas 12″/30cm $50</option>
   </select>
   <ValidationError errors={state.errors} />
 </div>
