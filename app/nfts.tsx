@@ -24,7 +24,7 @@ export default function NFTs() {
     <div>
         <div className='bg-gradient2'>
               <h1 className="pt-5 text-5xl font-bold text-center text-gray-700">
-              Choose one NFT
+              Choose one of your NFT's
                 </h1 >
                 </div>
     <div className='nft-viewer mb-10 pb-10 flex font-flex-col items-center justify-center'>

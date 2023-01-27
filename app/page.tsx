@@ -29,6 +29,10 @@ export default function Home() {
               <Wallet />
           </WagmiProvider>
         </ClientOnly>
+
+        <a className="by-mariusschmidt" target="_blank" href="https://twitter.com/mariussm1th">
+	by @mariussm1th
+</a>
     </div>
     </div>
   )
